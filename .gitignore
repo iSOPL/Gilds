@@ -1,12 +1,9 @@
-*.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+@EventHandler
+  public void LogowanieGraczaDolaczenieDoGry (PlayerJoinEvent e) { //metoda która wykonuje daną rzecz przy dołączeniu graczy.\
+    Player p = e.getPlayer(); //zmienna pobiera gracza z eventu przypisuje do liczby = p
+      e.setJoinMessage(ChatColor.DARK_AQUA + "Gracz  + p.getName() +  "dolaczyl do gry "); //wyswietlanie zmiennienie setJoinMessage.
+      
+@EventHandler
