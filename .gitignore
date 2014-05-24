@@ -5,5 +5,10 @@
   public void LogowanieGraczaDolaczenieDoGry (PlayerJoinEvent e) { //metoda która wykonuje daną rzecz przy dołączeniu graczy.\
     Player p = e.getPlayer(); //zmienna pobiera gracza z eventu przypisuje do liczby = p
       e.setJoinMessage(ChatColor.DARK_AQUA + "Gracz  + p.getName() +  "dolaczyl do gry "); //wyswietlanie zmiennienie setJoinMessage.
-      
+      p.sendMessgae("Witaj na naszym serwerze " + p.getName());
+      //end
 @EventHandler
+  public void WyjscieGraczaZSerwera (PlayerQuitEvent e) {
+    Player p = (e.getPlayer());
+      e.setQuitMessage("Gracz " + p.getName() +  "opuścil serwer")
+      //end
